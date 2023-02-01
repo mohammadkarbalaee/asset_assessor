@@ -5,21 +5,37 @@ class TotalValue extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Stack(
       alignment: Alignment.center,
-      width: MediaQuery.of(context).size.width * 0.85,
-      height: MediaQuery.of(context).size.height * 0.1,
-      decoration: BoxDecoration(
-        color: Colors.cyan,
-        borderRadius: BorderRadius.circular(25)
-      ),
-      child: Text(
-        '250 \ufdfc',
-        style: TextStyle(
-          fontSize: 25,
-          color: Colors.white
+      children: [
+        Container(
+          alignment: Alignment.center,
+          width: MediaQuery.of(context).size.width * 0.85,
+          height: MediaQuery.of(context).size.height * 0.15,
+          decoration: BoxDecoration(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.circular(25)),
+              child: Image.asset(
+                'assets/images/rial.jpg'
+              ),
         ),
-      ),
+        Opacity(
+          opacity: 0.6,
+          child: Container(
+            alignment: Alignment.center,
+            width: MediaQuery.of(context).size.width * 0.85,
+            height: MediaQuery.of(context).size.height * 0.15,
+            decoration: BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.circular(25)
+            ),
+          ),
+        ),
+        Text(
+          '250 \ufdfc',
+          style: TextStyle(fontSize: 25, color: Colors.white),
+        ),
+      ],
     );
   }
 }
