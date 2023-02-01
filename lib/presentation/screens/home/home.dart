@@ -12,6 +12,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffe4ebf7),
       body: SafeArea(
         child: Container(
           width: MediaQuery.of(context).size.width,
