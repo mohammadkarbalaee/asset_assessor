@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       ValueBox(
-                          valueToShow: 550,
+                          valueToShow: 650,
                           currency: "euro",
                           currencyLogo: euroSign),
                       SizedBox(
@@ -108,7 +108,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       ValueBox(
-                          valueToShow: 1400 * usd + 550 * eur,
+                          valueToShow: 1400 * usd + 650 * eur,
                           currency: "rial",
                           currencyLogo: rialSign),
                     ],
