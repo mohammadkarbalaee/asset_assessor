@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       ValueBox(
-                          valueToShow: 1400,
+                          valueToShow: 0,
                           currency: "dollar",
                           currencyLogo: dollarSign),
                       SizedBox(
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       ValueBox(
-                          valueToShow: 650,
+                          valueToShow: 7000,
                           currency: "euro",
                           currencyLogo: euroSign),
                       SizedBox(
@@ -108,7 +108,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       ValueBox(
-                          valueToShow: 1400 * usd + 650 * eur,
+                          valueToShow: 0 * usd + 7000 * eur,
                           currency: "rial",
                           currencyLogo: rialSign),
                     ],
